@@ -1,0 +1,132 @@
+:root{
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Light-gray-blue: hsl(229, 6%, 86%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+*{
+  margin:0;
+  padding:0;
+}
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+img, svg, video, canvas, picture{
+  display: block;
+  max-width: 100%;
+}
+body{
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+body{
+  display: grid;
+  place-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: .85rem;
+  padding: 2rem;
+  background-color: var(--Very-Light-Gray);
+}
+main{
+  display: grid;
+  gap: 1.7rem;
+  margin: 5rem auto 0;
+  max-width: 1110px;
+}
+section{
+  padding: 2rem;
+  display: grid;
+  gap: .5rem;
+  background-color: var(--white);
+  box-shadow: 5px 8px 10px 5px var(--Light-gray-blue);
+  border-radius: .8rem;
+}
+.small-images{
+  display: flex;
+  justify-content: right;
+  margin-top: 1.5rem;
+}
+p{
+  color: var(--Grayish-Blue)
+}
+h2{
+  color: var(--Very-Dark-Blue)
+}
+.head__p{
+  text-align: center;
+  font-size: .95rem;
+  margin: auto;
+  color:var(--Grayish-Blue)
+}
+section p{
+  font-size: .75rem;
+}
+section h2{
+  font-size: 1.15rem;
+}
+@media (min-width: 700px) {
+  .head__p{
+    width: 60%
+  }
+  main{
+    
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .calculator{
+    margin: auto;
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+  .karma{
+    grid-column-start: 2;
+  }
+  .super{
+    margin: auto;
+    
+  }
+  .team{
+    grid-column-start: 2;
+  }
+}
+.head__h1{
+  font-weight: 200;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--Very-Dark-Blue)
+}
+@media (max-width: 400px) {
+  .head__h1{
+    font-size: 1.5rem;
+  }
+  
+}
+.head{
+  display: grid;
+  gap: 1rem;
+}
+.head__span{
+  font-weight: 600;
+}
+.karma{
+  margin-top: 2rem;
+  border-top:  5px solid var(--Orange);
+}
+.super{
+  border-top: 5px solid var(--Cyan);
+}
+.team{
+  border-top: 5px solid var(--Red);
+}
+.calculator{
+  border-top: 5px solid var(--Blue);
+}
+
